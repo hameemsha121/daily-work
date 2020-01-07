@@ -10,7 +10,7 @@
 ## day 4
 		
 		 flat files
-	         DBMS
+	     DBMS
 		 Data Models
 		 ER Diagram
 		 DDL Commands
@@ -24,3 +24,10 @@
 		 3NF
 		 BCNF
 		 JAVA JUNIT
+
+## Day 6
+		
+		Java programming
+		basic programing
+		Some excercises done
+		
