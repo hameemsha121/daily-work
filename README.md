@@ -29,5 +29,8 @@
 		
 		Java programming
 		basic programing
-		Some excercises done
+		Some excercises on basics done
+		Some excercises on array done
+		packages 
+		Access modifiers
 		
