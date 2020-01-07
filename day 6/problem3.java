@@ -1,3 +1,10 @@
+/*
+
+You have to write a Program that accepts the product name and quantity as input
+   and displays the total price using the unit prices already stored in the system.
+
+*/
+
 import java.io.*;
 import java.util.*;
 

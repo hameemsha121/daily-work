@@ -1,3 +1,7 @@
+/* Write a Program that accepts a number and checks whether it's positive, negative, or
+   zero.*/
+   
+
 import java.io.*;
 import java.util.*;
 
