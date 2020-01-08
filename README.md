@@ -1,5 +1,5 @@
 # daily-work
-## day 3
+## Day 3
 		 Done with the basics of java programming
 		 Done Recursion
 		 studied type code and conversion
@@ -7,7 +7,7 @@
 		 operators in java
 		 datatypes of java
 
-## day 4
+## Day 4
 		
 		 flat files
 	     DBMS
