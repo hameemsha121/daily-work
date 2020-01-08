@@ -33,4 +33,18 @@
 		Some excercises on array done
 		packages 
 		Access modifiers
+## Day 7
+
+		Garbage Collector & architecture of JVM
+		Polymorphism
+				--method overloading
+				--method overriding
+		constructor
+		constructor chaining
+		modifiers
+				--static
+				--final
+				--abstract
+		Interfaces in java
+		
 		
