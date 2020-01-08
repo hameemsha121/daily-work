@@ -28,12 +28,21 @@ class array4{
 		for(int i=0;i<size;i++)
 		{
 			arr[i]=sc.nextInt();
+			
 		}
 		for(int i=0;i<size;i++)
+		{
+
 			for(int j=i+1;j<size;j++)
-				if(arr[i]==arr[j])
-					count++;
-			
+			{
+
+				if(arr[j]==arr[j-1])
+				count=1;
+				else if(arr[i]==arr[j])
+				count++;
+			}
+		}
+		
 		System.out.println("The number of duplicate elements in array is: "+count);	
 		
 		}
