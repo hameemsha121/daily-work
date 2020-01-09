@@ -17,7 +17,7 @@ public class JavaBasics {
 
 	public static void main(String[] args)
 	{
-	String str="Global Warming";
+	String str="GLobal Warming";
 	int len=str.length();
 	System.out.println(str.substring(len-4));//solution a
 	System.out.println(str.substring(4,9));//solution b
