@@ -48,6 +48,18 @@
 		Interfaces in java
 		(TO-DO: selection sort with words)
 ## Day 8
+
+		String Methods
+		Singleton design pattern
+		factory design pattern
+		String Buffer methods
+		String builder methods
+## Day 9
+
+		Nested class
+		Exception handling
+		Collections in java
+
 		
 		
 		
