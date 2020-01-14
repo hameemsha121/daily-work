@@ -69,6 +69,13 @@
 		Multithreading
 		Lambda Expressions
 		
+##	Day 12
+		Stream API
+		Serialization in java
+		Generics in java
+		Date joda API
+		
+		
 		
 		
 		
