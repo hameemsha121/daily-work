@@ -1,0 +1,122 @@
+<HTML>
+​
+
+<HEAD>
+    ​
+    <TITLE>About Us Page of ShowOnWheels</TITLE>
+    <LINK type="text/css" rel="stylesheet" href="ExternalStylesheet\homestylesheet.css" />
+    <style>
+        #topnav {
+            float: left;
+            width: 960px;
+            height: 20px;
+            word-spacing: 5px;
+            font-size: 90%;
+            padding-left: 60px;
+            padding-top: 6px;
+            white-space: nowrap;
+            text-align: left;
+            background-color: black;
+        }
+
+        div.class1 {
+            width: 500px;
+            height: 20px;
+            float: left;
+            text-align: center;
+        }
+    </style>
+    <script>
+
+
+
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            alert("The username is " + username + " and the password is " + password);
+        }
+    </script>
+    ​
+</HEAD>
+​
+
+<BODY>
+    ​
+    <DIV id="mainDivContainer" style="position: relative; width: 100%; margin-top: 0px; margin-bottom: 0px;">
+        ​
+        <DIV style="width: 960px;  margin-top: 5px; margin-left: auto; margin-right: auto">
+            ​
+            <DIV style="width: 960px; height:80px;">
+                ​
+                <IMG id="logo" src="images\Logo.png" width="500" height="100">
+                ​
+
+                <H5>For Enquiry<BR>
+                    ​
+                    Call Us 9225648543
+                    ​
+                </H5>
+                <IMG id="callus" src="images\callus.png">
+            </DIV>
+            ​
+            ​
+            <DIV class="class1">
+                <SPAN class="auto-style1"><B>The Ultimate Way For Booking Movie Tickets</B></SPAN>
+                ​
+            </DIV>
+            ​
+
+            <DIV id="topnav">
+                <NAV>
+
+                    <A href="index.html">Home</A> |
+                    <A href="aboutus.html">About Us</A> |
+                    ​
+                    <A href="contactus.html">Contact Us</A> |
+                    ​
+                    <A href="upcomingmovies.html">Upcoming Movies</A> |
+                    ​
+                </NAV>
+
+            </DIV>
+            ​
+            <DIV
+                style="width: 960px; height: 600px; position: relative;margin:0px; padding: px; overflow: hidden; background-color: white;">
+                <DIV style="width: 500px;  margin-top: 0px; margin-left: 100px; margin-right: auto;">
+                    ​
+                    <header>
+                        <h4>Create an Account</h4>
+                    </header>
+                    <article>
+                        <form action="#">
+                            Username:
+                            <input type="text" id="username"><br>
+                            ​ <br>
+                            Password:
+                            <input type="password" id="password"><br>
+                            ​
+                            <button type="submit" onclick="login()">Login</button>
+                            ​
+                            ​
+                        </form>
+                    </article>
+                    <aside>
+                        <p id="error"></p>
+                    </aside>
+                    ​
+                </DIV>
+                ​
+            </DIV>
+            ​
+        </DIV>
+        ​
+
+        ​
+
+        ​
+</BODY>
+​
+
+</HTML>
+​
