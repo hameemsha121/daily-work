@@ -10,6 +10,15 @@
         crossorigin="anonymous">
 
     <title>Bootstrap Sandbox</title>
+    <style>
+        #progress_bar1{
+            animation: progress 10s ease-in;
+        }
+        @keyframes progress {
+            from {width: 0%;}
+            to {width:100%;}         
+        }
+    </style>
 </head>
 
 <body>
@@ -89,50 +98,50 @@
         <!--####################START HERE######################-->
 
         <!-- ALERTS -->
-        <div>
+        <div class="alert alert-primary">
             <strong>Primary</strong> Blog post added
         </div>
 
-        <div>
+        <div class="alert alert-secondary">
             <strong>Secondary</strong> Blog post added
         </div>
 
-        <div>
+        <div class="alert alert-success">
             <strong>Success</strong> Blog post added
         </div>
 
-        <div>
+        <div class="alert alert-danger">
             <strong>Danger</strong> Please check the log files
         </div>
 
-        <div>
+        <div class="alert alert-info">
             <strong>Info</strong> You have a new message
         </div>
 
-        <div>
+        <div class="alert alert-warning">
             <strong>Warning</strong> Please check the log files
         </div>
 
-        <div>
+        <div class="alert alert-light">
             <strong>Light</strong> Please check the log files
         </div>
 
-        <div>
+        <div class="alert alert-dark">
             <strong>Dark</strong> Please check the log files
         </div>
 
 
         <!-- DISMISSABLE ALERT -->
-        <div>
-            <button type="button">
+        <div class="alert alert-primary alert-dismissable fade show">
+            <button type="button" class="close" data-dismiss="alert">
                 <span>&times;</span>
             </button>
             <strong>Dismissable</strong> Blog post added
         </div>
 
         <!-- EXTRA CONTENT -->
-        <div>
-            <h4>Congrats!</h4>
+        <div class="alert alert-success">
+            <h4 class="alert-heading">Congrats!</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos eius, sit quo assumenda totam commodi
                 ipsum saepe molestias eligendi exercitationem repudiandae qui facilis deserunt non, harum ab quam? Cumque</p>
             <hr>
@@ -143,20 +152,20 @@
         <br>
 
         <!-- PROGRESS BARS -->
-        <div>
-            <div></div>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
         <br>
-        <div>
-            <div></div>
+        <div class="progress">
+            <div class="progress-bar" style="width: 25%;" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
         <br>
-        <div>
-            <div></div>
+        <div class="progress">
+            <div class="progress-bar" style="width: 50%;"></div>
         </div>
         <br>
-        <div>
-            <div></div>
+        <div class="progress">
+            <div class="progress-bar" id="progress_bar1"></div>
         </div>
         <br>
         <div>
@@ -164,25 +173,25 @@
         </div>
         <br>
         <!-- HEIGHT -->
-        <div>
-            <div></div>
+        <div class="progress" style="height:0.5px;">
+            <div class="progress-bar" style="width: 25%;" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
         <br>
         <!-- STRIPED -->
-        <div>
-            <div></div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped" style="width: 25%;" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
         <br>
         <!-- ANIMATED -->
-        <div>
-            <div></div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 25%;" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
         <br>
         <!-- MULTIPLE BARS -->
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class="progress">
+            <div class="progress-bar bg-success" style="width:25%;"></div>
+            <div class="progress-bar bg-info" style="width:25%;"></div>
+            <div class="progress-bar bg-warning" style="width:25%;"></div>
         </div>
 
     </div>

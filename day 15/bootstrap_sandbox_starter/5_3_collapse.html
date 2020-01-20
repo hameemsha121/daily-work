@@ -83,16 +83,15 @@
     </div>
     <hr>
   </header>
-
   <div class="container">
     <!--#####################START HERE###################-->
 
     <!-- BUTTON WITH COLLAPSE -->
-    <button>Read More</button>
+    <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseCard">Read More</button>
 
-    <div>
-      <div>
-        <div>
+    <div class="collapse" id="collapseCard">
+      <div class="card my-3">
+        <div class="card-body">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eius libero quisquam nobis explicabo vel non necessitatibus
           ipsum doloribus cupiditate voluptate recusandae quo autem error debitis, sed, minima repellendus commodi.
         </div>
@@ -100,18 +99,18 @@
     </div>
 
     <!-- ACCORDION -->
-    <div>
-      <div>
-        <div>
+    <div class="accordian" id="accordianExample">
+      <div class="card">
+        <div class="card-header"> 
           <h5>
-            <a>
+            <a class="btn btn-primary text-light" data-target="#cardOne" data-toggle="collapse">
               Collapse One
             </a>
           </h5>
         </div>
 
-        <div>
-          <div>
+        <div class="collapse show" id="cardOne" data-parent="#accordianExample">
+          <div class="card-body">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto
             aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint
             et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.
@@ -119,17 +118,17 @@
         </div>
       </div>
 
-      <div>
-        <div>
+      <div class="card">
+        <div class="card-header">
           <h5>
-            <a>
+            <a class="btn btn-primary text-light" data-target="#cardTwo" data-toggle="collapse">
               Collapse Two
             </a>
           </h5>
-        </div>
+        </div class="card-header">
 
-        <div>
-          <div>
+        <div class="collapse" id="cardTwo" data-parent="#accordianExample">
+          <div class="card-body">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto
             aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint
             et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.
@@ -137,25 +136,26 @@
         </div>
       </div>
 
-      <div>
-        <div>
+      <div class="card">
+        <div class="card-header">
           <h5>
-            <a>
+            <a class="btn btn-primary text-light" data-target="#cardThree" data-toggle="collapse">
               Collapse Three
             </a>
           </h5>
         </div>
 
-        <div>
-          <div>
+        <div class="collapse" id="cardThree" data-parent="#accordianExample">
+          <div class="card-body">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto
             aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint
             et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.
           </div>
         </div>
       </div>
-    </div>
+    </div class="card">
   </div>
+
 
   <div style="margin-top:500px;"></div>
 
