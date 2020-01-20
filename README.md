@@ -75,7 +75,21 @@
 		Generics in java
 		Date joda API
 		
+##	Day 13
+		HTML basics
+
+
+##	Day 14
+		HTML
+		CSS
+		JavaScript
+
+
+##	Day 15
+		Bootstrap 
 		
+##	Day 16
+		EcmaScript
 		
 		
 		
