@@ -90,6 +90,10 @@
 		
 ##	Day 16
 		EcmaScript
-		
+
+##	Day 17
+		EcmaScript Promises covered
+		EcmaScript Clsses completed
+		Dom Manipulations were completed
 		
 		
