@@ -1,0 +1,153 @@
+
+<!-- query selector -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- query selector -->
+    
+    <!-- <p>paragraph one</p>
+    <p>paragraph two</p>
+    <div>div one</div>
+    <p>paragraph three</p>
+    <div>div two</div>
+    
+    <script>
+    
+    var firstDiv = document.querySelector('div');
+    firstDiv.style.color = 'red';
+    
+    </script>
+ -->
+
+<!-- queryselectorall() -->
+
+<!-- 
+<p>paragraph one</p>
+<p>paragraph two</p>
+<div>div one</div>
+<p>paragraph three</p>
+<div>div two</div>
+
+<script>
+    var paragraphs = document.querySelectorAll('p');
+for(var p of paragraphs){
+  p.style.color='red';
+  p.style.fontStyle='italic'
+  p.style.fontSize='35px'
+
+}
+</script>
+ -->
+
+ <!-- add Event Listener  and remove event listener-->
+
+ <!-- <button>Alert</button>
+<script>
+    var btn = document.querySelector('button');
+    btn.addEventListener('click',foo);
+function foo() { alert('hello'); }
+btn.removeEventListener('click',foo);
+var pEle = document.createElement('p')
+</script> -->
+
+<!-- append child  and remove child-->
+<!-- <div></div>
+
+<script>
+    var div = document.querySelector('div');
+    var strong = document.createElement('strong');
+    strong.textContent = 'Hello';
+    div.appendChild(strong);
+    div.removeChild(strong);
+</script> -->
+
+
+
+<!-- replece -->
+
+
+<!-- <div>
+    <strong>hello</strong>
+  </div>
+
+  <script>
+    var em = document.createElement('em');
+    var strong = document.querySelector('strong');
+    var div = document.querySelector('div');
+    em.textContent = 'hi';
+    div.replaceChild(em, strong);
+    </script> -->
+
+
+
+    <!-- clone  and insert before-->
+
+    <!-- <div>
+        <strong>hello</strong>
+      </div>
+
+    <script>
+        var em = document.createElement('em');
+        var strong = document.querySelector('strong');
+        var copy = strong.cloneNode(true);
+        var div = document.querySelector('div');
+        div.appendChild(copy);
+        em.textContent = 'hi';
+        div.insertBefore(em, strong);
+    </script>
+       -->
+
+
+    <!-- create document fragment -->
+
+    <!-- <table></table>
+    <script>
+        var table = document.querySelector("table");
+var df = document.createDocumentFragment();
+ 
+for(var i=0; i<5; i++) {
+  var td = document.createElement("td");
+  var tr = document.createElement("tr");
+  td.textContent = i;
+  tr.appendChild(td)
+  df.appendChild(tr);
+}
+ 
+table.appendChild(df);
+    
+    </script> -->
+
+<!-- get computed style -->
+<!-- <div>Hello</div>
+ <script>
+    // var style = getComputedStyle(document.querySelector('div'));
+    // alert(style.width); -->
+    <!-- var div = document.querySelector('div');
+    div.setAttribute('contenteditable', '')
+</script> --> 
+
+
+<!-- remove attribute -->
+
+
+<div contenteditable=true>hello</div>
+<script>
+var div = document.querySelector('div');
+alert(div.getAttribute('contenteditable'))
+div.removeAttribute('contenteditable');
+</script> 
+
+
+</body>
+</html>
+
+
+
