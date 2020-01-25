@@ -1,0 +1,18 @@
+package cts.basics;
+
+import java.util.Scanner;
+
+public class CheckVowel {
+
+	public static void main(String[] args) {
+		char a='i';
+		if(a =='a'||a=='e'||a== 'i'||a== 'o'||a=='u'||a=='A'||a=='E'||a=='I'||a=='O'||a=='U')
+		{
+			System.out.println("vowel");
+		}
+		else
+			System.out.println("consonant");
+
+	}
+
+}
