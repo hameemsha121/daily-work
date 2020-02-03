@@ -1,0 +1,26 @@
+package cts.basics;
+
+import java.util.Scanner;
+import java.util.function.Function;
+
+public class SumofN {
+
+	public static void main(String[] args) {
+
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number");
+		int a=sc.nextInt();
+		int result = sum(a);
+		
+		
+	
+	}
+	private static int sum(int a) {
+		
+		if(a<1)
+		return a;
+		return a+sum(a-1);
+		
+	}
+
+}

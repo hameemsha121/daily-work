@@ -1,0 +1,36 @@
+package com.cts.training.controller;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.cts.training.model.User;
+
+public class UserController {
+
+	public static void main(String[] args) {
+		
+		Configuration cfg = new Configuration();
+		cfg.configure();
+		
+		SessionFactory sessionFactory = cfg.buildSessionFactory();
+		Session session = sessionFactory.openSession();
+		Transaction transaction = session.beginTransaction();
+		
+//		User user = new User(103, "test", "test", "test@cts.com", 9789798790L, true);
+//		
+//		session.save(user);
+		
+		//to fetch the record of a user we will use get() method
+		
+		User getUser=session.get(User.class, 102);
+		getUser.setEnabled(false);
+		
+		session.update(getUser);
+		transaction.commit();
+		session.close();
+
+	}
+
+}

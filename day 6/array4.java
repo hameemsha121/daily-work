@@ -38,7 +38,7 @@ class array4{
 
 				if(arr[j]==arr[j-1])
 				count=1;
-				else if(arr[i]==arr[j])
+				if(arr[i]==arr[j])
 				count++;
 			}
 		}
