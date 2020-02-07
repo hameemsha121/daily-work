@@ -1,0 +1,78 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous">
+  
+    <title>Bootstrap Sandbox</title>
+  </head>
+<body onload="generateUserTable()">
+    <div id="userTable">
+        <p>You have zero users</p>
+    </div>
+</body>
+
+<script>
+    function generateUserTable() {
+        var dataSet = JSON.parse(localStorage.getItem('users'))
+        var userCount = dataSet.length;
+        if (userCount > 0) {
+            // CREATE DYNAMIC TABLE.
+            var table = document.createElement("table");
+            table.className = 'table-dark'
+            table.style.width = '50%';
+            table.setAttribute('border', '1');
+            table.setAttribute('cellspacing', '0');
+            table.setAttribute('cellpadding', '5');
+
+            // retrieve column header ('useerName', 'password')
+
+            var col = []; // define an empty array
+            for (var i = 0; i < userCount; i++) {
+                for (var key in dataSet[i]) {
+                    if (col.indexOf(key) === -1) {
+                        col.push(key);
+                    }
+                }
+            }
+
+            // CREATE TABLE HEAD .
+            var tHead = document.createElement("thead");
+
+            // CREATE ROW FOR TABLE HEAD .
+            var hRow = document.createElement("tr");
+
+            // ADD COLUMN HEADER TO ROW OF TABLE HEAD.
+            for (var i = 0; i < col.length; i++) {
+                var th = document.createElement("th");
+                th.innerHTML = col[i];
+                hRow.appendChild(th);
+            }
+            tHead.appendChild(hRow);
+            table.appendChild(tHead);
+
+            // CREATE TABLE BODY .
+            var tBody = document.createElement("tbody");
+
+            // ADD COLUMN HEADER TO ROW OF TABLE HEAD.
+            for (var i = 0; i < userCount; i++) {
+                var bRow = document.createElement("tr"); // CREATE ROW FOR EACH RECORD .
+
+                for (var j = 0; j < col.length; j++) {
+                    var td = document.createElement("td");
+                    td.innerHTML = dataSet[i][col[j]];
+                    bRow.appendChild(td);
+                }
+                tBody.appendChild(bRow)
+            }
+            table.appendChild(tBody);
+
+            // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
+            var divContainer = document.getElementById("userTable");
+            divContainer.innerHTML = "";
+            divContainer.appendChild(table);
+        }
+    };
+</script>

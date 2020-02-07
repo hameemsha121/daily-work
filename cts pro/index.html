@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="table.html" method="POST" id="myForm" name="myForm" onsubmit="return validateForm()">
+        username: <input type="text" name="userName">
+        password: <input type="password" name="password">
+        email: <input type="text" name="email">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+<script>
+    var newUser = [];
+    function validateForm() {
+        if(localStorage.getItem('users')){
+            var data = localStorage.getItem('users');
+            data=JSON.parse(data)
+            for(obj of data){
+                newUser.push(obj)
+            }
+        }
+        var userName = document.forms["myForm"]["userName"].value;
+        var password = document.forms["myForm"]["password"].value;
+        var email = document.forms["myForm"]["email"].value;
+
+
+        var data = new Object({
+            userName,
+            password,
+            email
+        });
+        newUser.push(data)
+
+        if (userName != '' && password != '') {
+            localStorage.setItem('users', JSON.stringify(newUser));
+        }
+    }
+</script>
+
+</html>
