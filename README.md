@@ -95,5 +95,60 @@
 		EcmaScript Promises covered
 		EcmaScript Clsses completed
 		Dom Manipulations were completed
+##	Day 18
+		Ecma Script continuation
+		Type Script
+##	Day 19
+		Angular Tour of Heroes
+##	Day 20
+		Angular forms
+##	Day 21
+		
+##	Day 22
+
+##	Day 23
+
+##	Day 24
+
+##	Day 25
+		
+		Hibernate basics
+##	Day 26
+		Hibernate
+##	Day 27
+		Backend stockview using hibernate
+##	Day 28
+
+##	Day 29
+		Servlet programming
+##	Day 30
+		JSP programing basics
+##	Day 31
+		Spring intro
+		StockExchange Middleware
+##	Day 32
+		Spring using XML
+		ICHD Bank problem
+		StockExchange Middleware
+##	Day 33
+		StockExchange Backend
+##	Day 34
+		Maven 
+##	Day 35
+		Maven continuation 
+##	Day 36
+		
+		Maven
+	
+##	Day 37
+		Spring MVC --continued CRUD operations
+		Spring JDBC Template
+		
+##	Day 38
+		Servlet/JSP security
+		JSP FILTER
+		Spring Security
+		
+		
 		
 		
