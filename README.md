@@ -156,10 +156,10 @@
 ## 	Day 40
 		spring security using database
 		SQL queries
-				* group by
-				* joins
-				* subquery
-				* exists keyword
-				* correlated queries
+				--group by
+				--joins
+				--subquery
+				--exists keyword
+				--correlated queries
 		
 		
