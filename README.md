@@ -161,5 +161,11 @@
 				--subquery
 				--exists keyword
 				--correlated queries
+
+## 	Day 41
+		SQL procedure/functions
+		SQL views
+		SQL Trigger
+		Web services
 		
 		
