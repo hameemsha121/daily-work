@@ -1,0 +1,13 @@
+.jumbotron-short{
+    max-height: 10vh;
+}
+main{
+    min-height: 100vh;
+    background-image: url(../assets/getty-stock-market-rising_large.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.head{
+    background-color:darkgoldenrod;
+}
