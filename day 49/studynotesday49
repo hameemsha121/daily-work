@@ -1,0 +1,87 @@
+update the status------->
+			user click on link for activation---->new component opens[activate]---->tis email send back to server---->using tis email
+				
+				find by email();
+				Usr u=find by email.
+				u.setActivr(true),
+				rep.save(u);
+				
+				{email:}
+				{email:abc@gmail.com}
+				
+				substring(str.indexOf(""),str.lastIndexOf(""))
+				
+				
+--------------------------------------------------------------------------------------------------------------------------------
+
+USER---->SERVER[REST API]
+
+@mapping
+user		------>USER
+
+send email to user
+		inbox[click]
+		
+		
+		@mapping()
+		Activate(){
+				send mail
+				}
+		
+		@mapping
+		
+Activated
+
+
+-------------------------------------------
+
+SPRING PROFILE
+
+
+	-->In application.properties ,,,,we are doing everything...like port 
+	-->copy application.properties==>change name to application_dev.properties  and application-test.properties
+	
+	-->spring.profiles.active=dev
+	
+	
+	--->profile names are mentioned like application-"profile name".properties
+	
+	
+------------------------------------------------------------------------------------
+
+ACTUATOR
+
+
+HAL--->
+
+management.endpoints.web.exposure.include.=*
+
+<dependency>
+	grp-->org.springframework.boot</
+	artifact-->spring boot starter actuator
+	
+	org.springframework.data
+	spring data rest hal browser
+		
+</dependency	
+
+
+http://localhost:8080/browser/index.html#/
+
+
+---------------------------------------------------------------------------------------------
+
+TESTing REST API
+
+test class ----------------------------------------Rest API class
+
+one testing-using postman;
+predefined classes for testing are there
+---TestRestTemplate---->responsebody given 
+expected output and the output from test class is matched;
+
+assertEquals is given into it.
+
+
+
+
