@@ -1,0 +1,34 @@
+DAY 50---NOTES
+----------------------------------------------------
+RestAPI        service 			Repository
+
+Autowired		Autowired		Autowired
+
+
+Microservices
+
+Service 
+
+
+
+---------------------------------------------------------
+
+pojo----->VO(view object)------------->DTO(Data Tranfer Object)(transfer to next layer)------------[same class different name based on the layer,can have different fields]
+
+
+entity--->whatever we have in database
+
+
+client layer--->angular[browser]
+Restcontroller--->client for service
+service--->client for Repository
+
+
+project
+-----main
+		--restControllers
+		--entity or beans
+		--service
+		--repository
+		--dto
+		
