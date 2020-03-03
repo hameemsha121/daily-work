@@ -176,6 +176,12 @@
 ## 	Day 52
 		Microservices for project
 		
+##	Day 53
+		spring cloud-starter
+		Ribbon
+		Feign basics
+		netflix eureka
+		microservices integration
 		
 		
 		

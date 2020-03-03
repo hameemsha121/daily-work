@@ -1,0 +1,76 @@
+all microservices ---complex to manage
+	client side load balancing with ribbon
+	https://www.javatpoint.com/client-side-load-balancing-with-ribbon
+	
+	previously we were using rest-template for communicating between microservices now feign client
+	
+	automatically fetch from backend and run on the required ports--for that feign and ribbon is being used;
+		----->this is maintaining client side load balancing;
+		
+		
+		
+		<dependency>  
+<groupId>org.springframework.cloud</groupId>  
+<artifactId>spring-cloud-starter-netflix-ribbon</artifactId>  
+</dependency>  
+
+
+default port for eureka naming server--8761;
+
+@EnableEurekaServer----discover all the microservices whic will run on any port number.
+
+http://localhost:8761/ ---> in browser
+
+
+Add dependency inside microservice
+	<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
+
+add this annotation in each main application of microservices
+@EnableDiscoveryClient
+
+
+pom.xml error----clean maven----maven build;
+
+
+
+
+
+feign ---->
+	openfeign-->dependency is added----spring-cloud-starter-openfeign---->used in microservice where others are used
+	
+	we have to create a proxy interface---there we hav to integrate @Feignclient(name="the microservice to be used")---->method declaration only-->one DTO needed--->extra fields are added in DTO(extra fields are from anoter POJO class);
+	
+	
+	pojo---have some fields
+	controller--retrieveExchange
+
+	H2CONSOLE
+
+
+using ribbon(client side load balancer)
+
+
+netflix ribbon dependency	
+
+
+			<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+		</dependency>
+		
+		
+		
+		
+ 	
+	
+	
+	
+
+										
+	
+	
+	
+	
