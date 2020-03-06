@@ -1,0 +1,96 @@
+day 55
+	--mockito for testing rest controller
+	
+	user in company
+	
+	company 
+feign start
+	dependency
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
+		</dependency>
+		
+		company main application
+@EnableFeignClient
+
+
+create interface(proxy application) in company 
+@feignClient in interface
+
+copy method name from the usercontroller(mapping waala)--->copy mapping plus method name
+
+if response entity method is not used --->copy user pojo class in company(that is why DTO is used)
+
+copy same method in companycontroller-->you can change method name
+	method body contains return getallusers()
+	
+	
+	
+babymol.baby121
+
+https://www.javatpoint.com/introduction-to-api-gateways
+
+
+API gateways---->Zuul server is an API application
+
+
+
+
+
+zuul is an 
+
+netflix zuul server as microservice
+
+		dependencies:--->zuul maintanence,,eureka discovery client,actuator,devtool,
+
+	---@EnableZuulProxy
+@EnableDiscoveryClient 
+		added to main application
+		
+--------------------------------------------------------		
+	in usersrvice and company service(should be added in every micro service)
+			pom.xml
+				<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+		</dependency>
+		
+		
+now inside userproxy-->add feign client name as zull service name(from application.properties)
+
+Logger from slf4j is used in company controller
+
+Logger logger=LoggerFactory.getLogger(this.getClass());	
+
+
+
+-----------------
+in zuul-service
+
+public class ZuulLoginFilter extends ZuulFilter	
+
+		@Override
+	public boolean shouldFilter() {
+		
+		return true;
+	}
+
+	@Override
+	public Object run() throws ZuulException {
+		
+		----here the logic is written---
+		return null;
+	}
+
+	@Override
+	public String filterType() {
+		return "pre";
+	}
+
+	@Override
+	public int filterOrder() {
+		return 1;---->only one should run
+	}
+	
+

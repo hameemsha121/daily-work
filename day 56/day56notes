@@ -1,0 +1,133 @@
+
+for caraousel to be properly working
+
+npm install jquery --save
+
+
+in carousel ts
+	declare var $:any;
+	
+	ngoninit(){
+		$('.carousel').carousel({
+			interval:3000
+		});
+	}
+	
+	
+	---------------------------------------------
+	
+	Continous Delivevery with docker
+	
+	---continous deployment 
+	---config canges
+	---bug fixes
+	---experiments
+	
+	---part of devops
+	
+	traditional delivery process
+	
+		Development--->QA--->Operations
+		
+	---------------------------------------------
+	
+	
+	8 phases are there
+	
+	two things---->Jenkin
+			  ---->Docker
+			  
+	automated deployment pipeline
+	
+	UAT-user acceptance testing
+	
+	code change--->"continous integration"--->"Automated accepted testing"--->"Configuration management"
+
+	---------------------------------------------
+	devops stages
+	
+	continous monitoring
+	1.version control system--git
+	2.continous integration-
+	3.continous delivery--
+	4.continous deployment--
+	
+	Source code management
+	--->git
+	
+	jenkins-->for continous integration
+			-->jenkin server will pull and build--->compile-->
+			codereview-->unit testing-->
+			integration testing-->
+			package(war,jar)
+			
+			
+	config management	
+			ensures that te current design and build state of the system is knownn,good and trusted
+			
+		eg:puppet
+
+	containerization
+			---->DOCKER
+			
+			docker file->docker image(-->docker container)-->docker hub
+			
+			
+
+	Building the CD process(continous deployement)
+		
+		----------------------------------------------------------------------
+		
+		Introduction to Docker
+		
+			install docker--->enable virtualisation--->hub.docker.com-->sign in--->link with github
+			
+		containerization versus virtualisation
+			--docker images are significantly smaller
+				hypervisor,host os and server hosts docker images 
+			--each application is delivered with its dependencies without operating systems
+			
+			
+		need for docker---
+			--isolation of microservices
+			--portability-->write once run anywhere
+		
+		
+		docker run helloworld
+		
+		docker ps--->running instances
+		
+		docker images
+		
+		
+		create a microservice---->in cmd sh mvnw package(add JAVA_HOME in system variable)
+		
+		touch Dockerfile
+		
+		vi Dockerfile
+		
+		paste
+			FROM openjdk:8-jdk-alpine
+			COPY target/cts-service-0.0.1-SNAPSHOT.jar /tmp/hello.jar
+			CMD ["java","-jar","/tmp/hello.jar"]
+
+	
+		to exit vi--->
+				esc--> :wq
+				
+		docker build -t cts-image:latest . (any name we can give---> . for working in present directory)
+				
+		docker run -p 8888:8080 cts-image:latest --->exposed portnum:portnum where application running
+		
+		for stoping docker image
+		
+		from docker ps----select container id
+		
+		
+		then docker stop containerid 
+		
+		
+
+			
+	
+		
