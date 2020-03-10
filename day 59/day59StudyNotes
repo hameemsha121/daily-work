@@ -1,0 +1,148 @@
+jenkins
+
+	integration tool
+	what
+	installation
+	hello world
+	arch
+	config agent
+	custom jenk images
+	config and management
+	
+open source, automation tool
+
+CI/CD implementation
+
+Hudson---renamed to jenkins by oracle;
+
+also use oter integration tools
+
+1000s of plugins are there to use
+
+features
+-----
+groovy script is needed
+
+jenkin pipeline in code	
+
+search for jenkins/jenkins in docker hub
+copy the image url
+
+docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins
+
+
+after running this command 
+
+copy password and open localhost:8080
+
+paste password	
+
+install suggested plugins\\\
+
+github
+nodejs
+junit
+
+
+new job
+	hello-world
+	select first option
+	
+	ok
+	
+enter some desc
+	build--->execute shell(for linux) and execute windows batch command(windows)
+		-->inside the command 
+				echo "My first job";---> we can add git repository and run the program according to the command we gave inside the repositort
+					"javac application.java"
+					"java application"
+					
+					scanner wont pass--->so integer.ParseInt(args[0]);
+
+save
+
+build now
+
+	red ---> failure
+	blue --->success
+	
+	jenkin cloud service is used for small application
+	
+	---->cloudBees
+
+
+
+
+hello-world application	
+
+	new item-->name--->pipline
+
+	Execution pipeline	
+	
+	on script part
+	
+			pipeline{
+    agent any
+    stages{
+        stage("Hello"){
+            steps{
+                echo "Hello world"
+            }
+			steps{
+				echo "I am in chennai8"
+			}
+        }
+    }
+}
+
+jenkin master and slave
+
+	receiving a build trigger--->after a commit to github
+	sending notification--->
+	handling http requests--->interaction with clients
+	managing the build environment--->
+	
+	jenkins pipeline
+		chain of scripts +
+			1. operational grouping
+			2. visiblity
+			3. feedback
+	
+	
+	steps
+		--->stages
+
+	build-->maven build
+	test -->maven test
+	deploy-->maven deploy
+	
+	create a microservice
+	in jenkins,create new item
+	
+	for each micro service ---->
+	
+	add pipeline
+
+		pipeline syntax must be checked
+
+
+		node{
+    stage('Checkout'){
+        
+            git credentialsId: 'git', url: 'https://github.com/hameemsha121/hello.git'
+        
+    }
+    stage('Compile'){
+            
+            def mvnHome= tool name: 'maven3', type: 'maven'
+            def mvnCMD= "${mvnHome}/bin/mvn"
+            script:"${mvnCMD} clean package"
+            
+    }
+    stage('Test'){
+             def mvnHome= tool name: 'maven3', type: 'maven'
+            def mvnCMD= "${mvnHome}/bin/mvn"
+            script:"${mvnCMD} clean test"
+    }
+}
+		
